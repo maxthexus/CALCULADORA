@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<header>
+
+</header>
+<body>
+    <div class="corpo">
+        <div class="input" id="input">
+            
+        </div>
+
+        <div class="grp-botoes">
+            <div id="btnsom"> <input type="button" class="operador" value="+" onclick="inserir('+')"> </div>
+            <div id="btnsubt"><input type="button" class="operador" value="-" onclick="inserir('-')"></div>
+            <div id="btnmult"><input type="button" class="operador" value="&times;" onclick="inserir('*')"></div>
+            <div id="btndivs"><input type="button" class="operador" value="&divide;" onclick="inserir('/')"></div>`
+            <div id="btnback"><input type="button" class="operador" value="&larr;" onclick="apagar()"></div>
+            <div class="botao-igual"  id="btnigual"><input type="button" value="=" onclick="calcular()"></div>
+            <div class="botao"  id="btnponto"><input type="button" value="." onclick="inserir('.')"></div>
+            <div class="botao"  id="btnC"><input type="button" value="C" onclick="limpar()"></div>
+            <div class="botao"  id="btn0"><input type="button" value="0" onclick="inserir('0')"></div>
+            <div class="botao"  id="btn1"><input type="button" value="1" onclick="inserir('1')"></div>
+            <div class="botao"  id="btn2"><input type="button" value="2" onclick="inserir('2')"></div>
+            <div class="botao"  id="btn3"><input type="button" value="3" onclick="inserir('3')" ></div>
+            <div class="botao"  id="btn4"><input type="button" value="4" onclick="inserir('4')"></div>
+            <div class="botao"  id="btn5"><input type="button" value="5" onclick="inserir('5')"></div>
+            <div class="botao"  id="btn6"><input type="button" value="6" onclick="inserir('6')"></div>
+            <div class="botao"  id="btn7"><input type="button" value="7" onclick="inserir('7')"></div>
+            <div class="botao"  id="btn8"><input type="button" value="8" onclick="inserir('8')"></div>
+            <div class="botao"  id="btn9"><input type="button" value="9" onclick="inserir('9')"></div>    
+
+        </div>
+        
+    </div>
+    <script src="js/script.js"></script>   
+</body>
+<footer>
+        <p class="footer"><strong>Matheus Duarte</strong> - Projeto JS</p>  
+</footer>
+</html>

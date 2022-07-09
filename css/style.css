@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:'lcd' ;
+    src: url(/font/lcd.ttf) format('truetype');
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.corpo{
+    width: 600px;
+    height: 570px;
+    background-color: rgba(211, 211, 211, 0.521);
+    border-radius: 20px;
+}
+
+div.input{
+    background-color: white;
+    width: 540px;
+    height: 60px;
+    border: 1px solid black;
+    margin: 30px;
+    font-family: 'lcd';
+    font-size: 3.5em;
+    letter-spacing: 4px;
+    text-align: right;
+}
+
+div.grp-botoes{
+    margin: 40px 20px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 20px;
+    justify-items: center;
+    grid-template-areas: " soma subt mult divs" 
+                         "btn7 btn8 btn9 back"
+                         "btn4 btn5 btn6 igual"
+                         "btn1 btn2 btn3 igual"
+                         "btn0 ponto C igual"
+    ;
+
+
+}
+
+div.botao input{
+     
+    width: 115px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.botao:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.329);
+}
+
+.operador {
+     
+    width: 115px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.operador:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.329);
+}
+
+.botao-igual input{
+    border: 1px solid black;
+    background-color: rgb(44, 111, 255);    
+    width: 115px;
+    height: 220px;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em; 
+}
+
+div.botao-igual:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.329);
+}
+
+div.input:hover{
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.329);
+}
+
+footer{
+    margin-top: 10px;
+}
+
+/*definição de nome grid Botões */
+
+div#btnsom{
+    grid-area: soma;
+}
+div#btnsubt{
+    grid-area: subt;
+}
+div#btnmult{
+    grid-area: mult;
+}    
+div#btndivs{
+    grid-area: divs;
+}
+div#btnback{
+    grid-area: back;
+}
+div#btnigual{
+    grid-area: igual;
+}
+div#btnponto{
+    grid-area: ponto;
+}
+div#btnC{
+    grid-area: C;
+}
+div#btn0{
+    grid-area: btn0;
+}      
+div#btn1{
+    grid-area: btn1;
+}    
+div#btn2{
+    grid-area: btn2;
+} 
+div#btn3{
+    grid-area: btn3;
+} 
+div#btn4{
+    grid-area: btn4;
+} 
+div#btn5{
+    grid-area: btn5;
+} 
+div#btn6{
+    grid-area: btn6;
+} 
+div#btn7{
+    grid-area: btn7;
+} 
+div#btn8{
+    grid-area: btn8;
+} 
+div#btn9{
+    grid-area: btn9;
+} 
